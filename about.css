@@ -1,9 +1,8 @@
-@import url('style.css');
-
 body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about {
@@ -68,5 +67,27 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        margin: 50px 20px;
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .about p, .about ul {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .about ul {
+        padding-left: 10px;
     }
 }
